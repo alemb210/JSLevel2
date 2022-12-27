@@ -26,6 +26,8 @@ html, body {
 .card {
     height:24%;
     width:24%;
+    text-align: center;
+    font-size: 100px;
 }
 
 #scoreBar {
@@ -40,4 +42,6 @@ html, body {
 
 #scoreBar button {
     width: 20%;
+    color: red;
+    font-size: 32px;
 }

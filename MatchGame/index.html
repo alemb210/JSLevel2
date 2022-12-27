@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/JSLevel2/JSLv2/MatchGame/style.css">
-    <script src="/JSLevel2/JSLv2/MatchGame/index.js"></script>
+    <link rel="stylesheet" href="/MatchGame/style.css">
+    <script src="/MatchGame/index.js"></script>
     <title>Document</title>
 </head> 
-<body onload="shuffle()">
+<body onload="shuffle(), update()">
     <div id="playingField">
         <div class="card red" id="card1" onclick="flipCard(this.id, this.className.split(' ')[1])">card</div>
         <div class="card red" id="card2" onclick="flipCard(this.id, this.className.split(' ')[1])">card</div>
@@ -29,7 +29,7 @@
     </div>
     <div id="scoreBar">
         <p id="score"> Score: </p>
-        <button>Reset Game</button>
+        <button onclick="reset()">Reset Game</button>
     </div>
 </body>
 </html>
